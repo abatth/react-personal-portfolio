@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* center vertically */
+  min-height: 8vh;
+  background-color: #fff;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.navbar.active {
+  background-color: black;
+  color: #fff;
+}
+
+.navbar.active li a {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ab-logo {
+  width: 60px;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+.ab-logo:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.new-nav__links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.new-nav__links li a {
+  color: black;
+  font-weight: 500;
+  transition: all 0.5s ease-in;
+}
+
+.new-nav__links li a:hover {
+  opacity: 0.9;
+}
+
+.new-nav-active {
+  transform: translateX(0);
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: hsl(220, 69%, 61%);
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: none;
+}
+
+.burg-active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  transition: all 0.5s ease-in;
+}
+
+.burg-active .line2 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.burg-active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  transition: all 0.5s ease-in;
+}
+
+/* On screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .new-nav__links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: hsl(220, 69%, 61%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .new-nav__links-active {
+    transform: translateX(0);
+  }
+
+  .new-nav__links-active li a {
+    color: #fff;
+    transition: all 0.5s ease-in;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
