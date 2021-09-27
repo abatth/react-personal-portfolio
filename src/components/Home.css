@@ -1,0 +1,63 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.headingText {
+  color: #fff;
+}
+
+.large-heading-name {
+  color: #fff;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+#typing {
+  font-size: clamp(28px, 6vw, 60px);
+}
+
+.p2 {
+  color: hsl(220, 69%, 61%);
+  line-height: 0.9;
+}
+
+.hero-description {
+  color: #fff;
+  font-size: clamp(12px, 3vw, 20px);
+  margin-top: 20px;
+  max-width: 540px;
+}
+
+.hero {
+  padding: 10rem 1rem 4rem;
+
+  background-image: url("../images/kb2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1; /* text is actually behind the overlay so text is darkened which we dont want */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* On screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  /* .container {
+  } */
+}

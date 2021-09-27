@@ -1,0 +1,63 @@
+.project-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  padding: 2rem;
+  width: 95%;
+  margin: 0 auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+}
+
+.project-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  top: -4px;
+  /* transform: scale(1.02); */
+}
+
+.project-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card h3 {
+  /* color: #246b97; */
+  margin-bottom: 0.5rem;
+}
+
+.project-card-image {
+  /* width: 400px;
+      height: 400px; */
+  height: 15rem;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #b0d2e7;
+}
+
+.techs-container {
+  /* display: flex;
+      justify-content: space-evenly; */
+  margin-top: 5px;
+}
+
+.portfolio-description {
+  margin-bottom: 0.5rem;
+}
+
+.techs-container span {
+  background-color: hsl(220, 69%, 61%);
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  margin-right: 5px;
+  margin-top: 0.5rem;
+}
+
+.portfolio-link a {
+  color: #5785e0;
+}

@@ -1,0 +1,68 @@
+/* .hero-particle {
+  display: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: red;
+  font-size: clamp(28px, 6vw, 60px);
+} */
+
+/* .hero-particle {
+  background-color: #232741;
+
+  position: relative;
+} */
+
+.custom-subtitle {
+  text-align: center;
+  /* font-size: clamp(1rem, 10vw, 2rem); */
+  font-size: 2rem;
+}
+
+.center_all {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  /* margin-right: -50%; */
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+}
+
+#particles-js {
+  /* height: 100%;
+  width: 100%; */
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #232741;
+
+  position: relative;
+}
+
+@media only screen and (max-width: 460px) {
+  /* .custom-subtitle {
+    font-size: 0.5rem;
+  } */
+  /* .center_all {
+    top: 80%;
+  } */
+
+  .hero-particle {
+    height: 40vh;
+  }
+
+  .custom-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .center_all {
+    top: 70%;
+  }
+
+  /* #particles-js {
+    max-height: 100%;
+  } */
+}

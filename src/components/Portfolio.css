@@ -1,0 +1,109 @@
+#portfolio {
+  background-color: #fff;
+  position: relative;
+  padding: 1rem 3rem; /* top & bottom, left & right */
+}
+
+.title-container {
+  text-align: center;
+  /* font-size: 3rem; */
+  margin-bottom: 2rem;
+  color: #5785e0;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-image {
+  /* width: 1000px;
+  height: 600px; */
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+  border: 1px solid #c2c1c1;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #5785e0;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #5785e0;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+/* .image-0 {
+} */
+/* 
+.testing {
+  position: relative;
+} */
+
+/* .text-wrapper {
+  position: absolute;
+  top: 40%;
+  right: 250px;
+} */
+
+.text-wrapper h1 {
+  /* color: rgba(255, 255, 255, 0.616); */
+  color: #fff;
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  background-color: BLUE;
+}
+
+/* .text-wrapper h1.text-0:before {
+  content: "WordPress Websites";
+}
+
+.text-wrapper h1.text-1:before {
+  content: "Movie Search Database";
+}
+
+.text-wrapper h1.text-2:before {
+  content: "Github Profile Viewer";
+} */
+
+.view-more {
+  margin: 2rem;
+  text-align: center;
+}
+
+.view-more a {
+  color: #5785e0;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+}
