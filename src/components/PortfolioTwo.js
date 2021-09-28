@@ -5,6 +5,7 @@ import todoimg from "../images/to-do-list.png";
 import githubimg from "../images/github_project.png";
 import netfliximg from "../images/netflix-min.png";
 import weatherimg from "../images/weather-img.png";
+import solidearthimg from "../images/s-earth-final.png";
 // import { TiltDirection } from "tsparticles";
 // import todocropimg from "../images/to-do-list-cropped.png"; //dont use
 
@@ -26,14 +27,16 @@ function PortfolioTwo() {
       link: weatherimg,
       demo: "https://reactweather.amanbatth.com",
     },
+
     {
-      name: "Netflix Clone",
+      name: "Responsive Websites",
       description:
-        "Created a web page that looks similar to the Netflix webpage. I created this by following a tutorial by Clever Programmer. I found it very useful as it allowed me to learn creative developing techniques from a more experienced React developer.",
-      techs: ["React", "Web API"],
-      link: netfliximg,
-      demo: "http://netflix-clone.amanbatth.com",
+        "Developed modern websites for clients that adjust automatically depending on the screen of the device it is displayed on.",
+      link: solidearthimg,
+      demo: "http://www.solidearth.ca",
+      techs: ["WordPress"],
     },
+
     {
       name: "Github User App",
       description:
@@ -41,6 +44,15 @@ function PortfolioTwo() {
       techs: ["React", "Web API", "Tailwind CSS"],
       link: githubimg,
       demo: "http://githubsearch.amanbatth.com",
+    },
+
+    {
+      name: "Netflix Clone",
+      description:
+        "Created a web page that looks similar to the Netflix webpage. I created this by following a tutorial by Clever Programmer. I found it very useful as it allowed me to learn creative developing techniques from a more experienced React developer.",
+      techs: ["React", "Web API"],
+      link: netfliximg,
+      demo: "http://netflix-clone.amanbatth.com",
     },
   ];
 
